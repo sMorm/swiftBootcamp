@@ -9,7 +9,21 @@ let numbers = [1, 2 ,3 ,4 ,5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
 // To use a loop in Swift to store values :
 
+// First we'd have to create a variable that create an array of Ints
+// We do this by creating a variable, and providing the type, which in our case, an Int
+// Followed by the paranthesis, the language will know that it's an array.
 
+var arrayNumbers = [Int]()
+
+// If you are coming from languages like JavaScript or Python, for-loops work the same way in Swift.
+// The first variable followed by the 'for' keyword, is what each iteration value will be stored in.
+// The second variable followed by 'in', is what we will be iterating through, in our case we will be
+// doing number 1 to 1000. '1...1000' will tell the program that we will be specifying values 1 to 
+// 1000.
+
+for i in 1...1000 {
+    arrayNumbers.append(i)
+}
 
 // What most people would try to do and solve this problem is that they would simply check if the current
 // value is divisible by 3, then 5, then check if it's divisible by both values. This is wrong. This is
@@ -24,7 +38,7 @@ let numbers = [1, 2 ,3 ,4 ,5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
  */
 
 
-for num in numbers {
+for num in arrayNumbers {
     if num % 15 == 0 {
         print ("\(num) fizz buzz!")
     } else if num % 5 == 0 {
