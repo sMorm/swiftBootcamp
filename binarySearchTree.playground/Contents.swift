@@ -1,7 +1,12 @@
 //: Playground - noun: a place where people can play
 
+// Recursively traverse a binary tree, and return true if the item is found.
+
 
 import UIKit
+
+
+
 
 class node {
     var Item: Int
