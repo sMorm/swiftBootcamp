@@ -3,27 +3,7 @@
 import UIKit
 
 
-let testList = [10, 50, 40, 69, 20, 97, 20, 24, 43, 2, 3, 20, 20, 21, 19]
-
-//func bubbleTest(List list: [Int]) -> [Int] {
-//    
-//    var toReturn = list
-//    var largest = list[0]
-//    var current = 0
-//    
-//    while current != (list.count - 1) {
-//        for i in current...list.count {
-//            if list[i] > largest {
-//                largest = list[i]
-//            }
-//        }
-//        toReturn[current] = largest
-//        current = current + 1
-//    }
-//    return toReturn
-//}
-//
-//bubbleTest(List: testList)
+var testList = [10, 50, 40, 69, 20, 97, 20, 24, 43, 2, 3, 20, 20, 21, 19]
 
 func quickSort(List list: [Int]) -> [Int] {
     
